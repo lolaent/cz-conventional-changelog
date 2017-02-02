@@ -1,6 +1,6 @@
 {
   "name": "@g4/cz-conventional-changelog-g4mobile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "registry": "https://nexus.lolacloud.com/repository/npm-private/"
   },

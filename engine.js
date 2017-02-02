@@ -79,3 +79,16 @@ module.exports = function (options) {
         // parentheses are only needed when a scope is present
         var scope = answers.scope.trim();
         scope = scope ? '(' + answers.scope.trim() + ')' : '';
+
+		// Hard limit this line
+        var head = (answers.type + scope + ': ' + answers.subject.trim()).slice(0, maxLineWidth);
+
+        // Wrap these lines at 100 characters
+        var body = wrap(answers.body, wrapOptions);
+        var footer = wrap(answers.footer, wrapOptions);
+
+        commit(head + '\n\n' + body + '\n\n' + footer);
+      });
+    }
+  };
+};
