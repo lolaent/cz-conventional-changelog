@@ -1,0 +1,34 @@
+{
+  "name": "@g4/cz-conventional-changelog-g4mobile",
+  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "https://nexus.lolacloud.com/repository/npm-private/"
+  },
+  "description": "Commitizen adapter following the conventional-changelog format. Minor tweaks for g4mobile",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo 'Tests need to be setup!'"
+  },
+  "homepage": "https://github.com/lolaent/cz-conventional-changelog-g4mobile",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lolatech/cz-conventional-changelog-g4mobile.git"
+  },
+  "author": "Rupert Redington <ruperrt@neontribe.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "conventional-commit-types": "^2.0.0",
+    "lodash.map": "^4.5.1",
+    "longest": "^1.0.1",
+    "pad-right": "^0.2.2",
+    "right-pad": "^1.0.1",
+    "word-wrap": "^1.0.3"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.5"
+  },
+  "czConfig": {
+    "path": "./"
+  }
+}
